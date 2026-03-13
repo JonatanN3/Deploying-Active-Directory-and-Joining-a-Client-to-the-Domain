@@ -4,7 +4,7 @@
 
 
 <h1>Deploying Active Directory and Joining a Client to the Domain</h1>
-This tutorial focuses on establishing the necessary infrastructure in Microsoft Azure for an Active Directory deployment. This includes creating the required cloud resources, configuring a virtual network, deploying virtual machines, and confirming proper network communication between systems before implementing Active Directory Domain Services.<br />
+After preparing the Azure infrastructure, this section focuses on deploying Active Directory Domain Services. The Windows Server virtual machine is promoted to a Domain Controller, creating the central directory service for the environment. After the domain is established, Active Directory is validated, an Organizational Unit is created for structured management, and the Windows client system is joined to the domain.<br />
 
 <h2>Environments and Technologies Used</h2>
 

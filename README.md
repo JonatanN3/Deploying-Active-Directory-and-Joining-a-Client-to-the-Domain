@@ -20,51 +20,43 @@ After preparing the Azure infrastructure, this section focuses on deploying Acti
 - Windows 11 Pro (Version 25H2-x64)
   
 
-<h2>Confirm Installation Selections</h2>
+<h2>Server Manager Dashboard</h2>
 
 <img width="1536" height="1024" alt="LabA1" src="https://github.com/user-attachments/assets/46116115-7809-4cd5-87a7-7ffcb761e8ef" />
 </p>
 <p>
 Steps:
 
-Opened Server Manager on dc-1.
-Clicked Manage in the top-right corner.
-Selected Add Roles and Features.
-Continued through the wizard until reaching Server Roles.
-Selected Active Directory Domain Services.
-Accepted the additional required features when prompted.
-Continued through the wizard until reaching Confirm installation selections.
-Reviewed the selected roles and features, including:
-Active Directory Domain Services
-Group Policy Management
-Remote Server Administration Tools
-Checked Restart the destination server automatically if required.
-Clicked Install.
+- Launch the Windows Server virtual machine dc-1.
+- Sign into the server using administrative credentials.
+- Wait for the desktop environment to finish loading.
+- Open Server Manager.
+- Review the dashboard to confirm the server is available for configuration.
+- Prepare to begin installing the Active Directory Domain Services role.
 
-Explanation
-This step confirms that the server is about to install the components required for Active Directory. Installing the AD DS role is the first step toward turning the Windows Server machine into a functioning Domain Controller.
+Explanation:
+This step shows the starting point of the server configuration process. Server Manager is the primary tool used to install roles and features on Windows Server, including Active Directory Domain Services.
 
-<h2>Configuration Required After Installation</h2>
+<h2>Select Active Directory Domain Services</h2>
 
 <img width="1536" height="1024" alt="LabA3" src="https://github.com/user-attachments/assets/4e909d5c-7227-4891-b8a2-8e9d66107b3a" />
 </p>
 <p>
 Steps:
   
-Waited for the installation to finish.
-Reviewed the completion message in the wizard.
-Confirmed that the message stated:
-installation succeeded
-additional steps are required
-Located the link:
- Promote this server to a domain controller
-Prepared to begin the post-deployment configuration process.
+- Open Server Manager on dc-1.
+- Click Manage in the top-right corner.
+- Choose Add Roles and Features.
+- Proceed through the wizard until reaching the Server Roles page.
+- Locate Active Directory Domain Services in the list of available roles.
+- Check the box for Active Directory Domain Services.
+- Review the description shown on the right side of the wizard.
+- Prepare to continue with the required supporting features.
 
 Explanation
-Installing the AD DS role does not automatically create a domain. At this point, the role is installed, but the server still needs to be promoted to a Domain Controller before it can manage users, computers, and authentication.
-.
+This step selects the core server role required to build an Active Directory environment. Choosing Active Directory Domain Services allows the server to later be promoted into a Domain Controller.
 
-<h2>Start the Domain Controller Promotion Process</h2>
+<h2>Confirm Installation Selections</h2>
 
 <img width="1536" height="1024" alt="LabA4" src="https://github.com/user-attachments/assets/88381e84-c40f-4951-833f-54f5edb9e987" />
 
@@ -72,15 +64,22 @@ Installing the AD DS role does not automatically create a domain. At this point,
 <p>
 Step:
 
-Returned to Server Manager.
-Clicked the notification flag in the upper-right corner.
-Reviewed the post-deployment message for Active Directory Domain Services.
-Clicked Promote this server to a domain controller.
-Waited for the Active Directory Domain Services Configuration Wizard to open.
+- Open Server Manager on dc-1.
+- Click Manage in the top-right corner.
+- Choose Add Roles and Features.
+- Proceed through the wizard until reaching Server Roles.
+- Select Active Directory Domain Services.
+- Accept the additional required features when prompted.
+- Continue through the wizard until reaching Confirm installation selections.
+- Review the selected roles and features, including:
+- Active Directory Domain Services
+- Group Policy Management
+- Remote Server Administration Tools
+- Check  Restart the destination server automatically if required.
+- Click  Install.
 
 Explanation
-This step begins the actual domain setup process. In a real IT environment, this is where the server transitions from being a basic Windows Server installation to becoming a Domain Controller.
-
+This step confirms that the server is about to install the components required for Active Directory. Installing the AD DS role is the first step toward turning the Windows Server machine into a functioning Domain Controller.
 
 <h2>Configure Domain Controller Options/h2>
   

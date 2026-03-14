@@ -39,7 +39,7 @@ This shows the starting point of the server configuration process. Server Manage
 
 <h2>Select Active Directory Domain Services</h2>
 
-<img width="1536" height="1024" alt="LabA3" src="https://github.com/user-attachments/assets/4e909d5c-7227-4891-b8a2-8e9d66107b3a" />
+<img width="1536" height="1024" alt="LabA4" src="https://github.com/user-attachments/assets/2d816114-175d-43f2-908d-af886d61575b" />
 </p>
 <p>
 Steps:
@@ -58,7 +58,7 @@ This step selects the core server role required to build an Active Directory env
 
 <h2>Confirm Installation Selections</h2>
 
-<img width="1536" height="1024" alt="LabA4" src="https://github.com/user-attachments/assets/88381e84-c40f-4951-833f-54f5edb9e987" />
+<img width="1536" height="1024" alt="LabA10" src="https://github.com/user-attachments/assets/0b505116-9503-4e42-981f-7e06595d96be" />
 </p>
 <p>
 Steps:
@@ -82,7 +82,7 @@ This represents the starting point of configuring the server. The Server Manager
 
 <h2>AD DS Installation Complete</h2>
   
-<img width="1536" height="1024" alt="LabA6" src="https://github.com/user-attachments/assets/013176d7-3c87-47a7-b32e-62fa0d78b196" />
+<img width="1536" height="1024" alt="LabA13" src="https://github.com/user-attachments/assets/f021bed9-0ed0-47f4-966d-d7b6ae1e6288" />
 </p>
 <p>
 Steps:

@@ -33,7 +33,7 @@ Steps:
 - Review the dashboard to confirm the server is available for configuration.
 - Prepare to begin installing the Active Directory Domain Services role.
 
-Explanation:
+**Explanation:**
 This shows the starting point of the server configuration process. Server Manager is the primary tool used to install roles and features on Windows Server, including Active Directory Domain Services.
 
 <h2>Select Active Directory Domain Services</h2>
@@ -52,7 +52,7 @@ Steps:
 - Review the description shown on the right side of the wizard.
 - Prepare to continue with the required supporting features.
 
-Explanation:
+**Explanation:**
 This step selects the core server role required to build an Active Directory environment. Choosing Active Directory Domain Services allows the server to later be promoted into a Domain Controller.
 
 <h2>Confirm Installation Selections</h2>
@@ -76,7 +76,7 @@ Steps:
 - Check  **Restart the destination server automatically if required**.
 - Click  **Install**.
 
-Explanation:
+**Explanation:**
 This represents the starting point of configuring the server. The Server Manager dashboard in Windows Server is used to install and manage server roles and features. One of the key roles installed through this tool is Active Directory, which allows the server to function as a domain controller.
 
 <h2>AD DS Installation Complete</h2>
@@ -96,7 +96,7 @@ Steps:
 - **Promote this server to a domain controller**
 - Prepare to continue post-deployment configuration.
 
-Explanation:
+**Explanation:**
 The installation of Active Directory Domain Services only prepares the server for directory services. The server must still be promoted to a Domain Controller before it can manage users, computers,and authentication.
 
 <h2>Promote This Server to a Domain Controller</h2>
@@ -115,10 +115,10 @@ Steps:
 - **Promote this server to a domain controlle**r
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
-Explanation:
+**Explanation:**
 This step begins the second stage of the deployment. The server now has the AD DS role installed, and this post-deployment task starts the process of creating the domain and promoting the server into a Domain Controller.
 
-<h2>Domain Controller Promotion Completed</h2>
+<h2>Configure a New Forest</h2>
 
 <p>
 <img width="1536" height="1024" alt="LabA21" src="https://github.com/user-attachments/assets/6f7cc0cb-cf7e-4a65-94f3-800f1bbc68c1" />
@@ -126,14 +126,16 @@ This step begins the second stage of the deployment. The server now has the AD D
 <p>
 Steps:
   
-Waited for the installation and promotion process to complete.
-Reviewed the final result message.
-Confirmed that the message stated:
- This server was successfully configured as a domain controller
-Reviewed any final notes shown by the wizard.
-Prepared for the automatic sign-out and restart.
+- Open the **Active Directory Domain Services Configuration Wizard** from Server Manager.
+- Review the available deployment options.
+- Select **Add a new forest.**
+- Click into the **Root domain name** field.
+- Type the domain name:
+- **mydomain.com**
+- Ensure that the new forest option was selected.
+- Click **Next** to continue.
 
-Explanation
+**Explanation:**
 This step confirms that Active Directory has been successfully deployed. At this point, the server is no longer just a Windows Server VM — it is now a working Domain Controller capable of managing the domain.
 
 <h2>Verify Server Manager After Restart</h2>

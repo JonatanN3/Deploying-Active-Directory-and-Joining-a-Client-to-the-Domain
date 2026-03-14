@@ -16,7 +16,6 @@ After preparing the Azure infrastructure, this section focuses on deploying Acti
 
 - Windows Server 2022 (Datacenter Azure Edition Hotpatch-x64 Gen2)
 - Windows 11 Pro (Version 25H2-x64)
-  
 
 <h2>Server Manager Dashboard</h2>
 
@@ -96,11 +95,10 @@ Steps:
 - Prepare to continue post-deployment configuration.
 
 **Explanation:**
-The installation of Active Directory Domain Services only prepares the server for directory services. The server must still be promoted to a Domain Controller before it can manage users, computers,and authentication.
+After installing the Active Directory Domain Services role, a domain is not created automatically. The role is now available on the server, but the system must still be promoted to a Domain Controller before it can manage users, computers, and authentication within the network.
 
 <h2>Promote This Server to a Domain Controller</h2>
 
-<p>
 <img width="1536" height="1024" alt="LabA14" src="https://github.com/user-attachments/assets/f404e925-9fd2-420b-9db1-de5e85483b2d" />
 </p>
 <p>
@@ -115,7 +113,7 @@ Steps:
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
 **Explanation:**
-This step begins the second stage of the deployment. The server now has the AD DS role installed, and this post-deployment task starts the process of creating the domain and promoting the server into a Domain Controller.
+This step begins the post-deployment configuration following the AD DS role installation. It starts the process of domain creation and promotes the server to a Domain Controller, enabling it to manage users, computers, and directory services.
 
 <h2>Configure a New Forest</h2>
 

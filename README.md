@@ -103,12 +103,12 @@ The installation of Active Directory Domain Services only prepares the server fo
 <h2>Promote This Server to a Domain Controller</h2>
 
 <p>
-<img width="1536" height="1024" alt="LabA9" src="https://github.com/user-attachments/assets/8b38698d-d6a9-4047-92af-379970b043e9" />
+<img width="1536" height="1024" alt="LabA14" src="https://github.com/user-attachments/assets/f404e925-9fd2-420b-9db1-de5e85483b2d" />
 </p>
 <p>
 Steps:
 
-- Return to the **Server Manager** dashboard after the AD DS role finished installing.
+- Go back to the **Server Manager** dashboard after the AD DS role finished installing.
 - Observe the notification flag in the upper-right corner.
 - Click the notification flag.
 - Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on **dc-1**.

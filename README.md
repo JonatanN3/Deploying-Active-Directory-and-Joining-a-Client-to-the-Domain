@@ -1,7 +1,5 @@
 <p align="center">
-<img width="600" height="335" alt="image" src="https://github.com/user-attachments/assets/f5a3d652-196e-4dcf-814f-113a9cbb6f54" />
-
-
+<img width="310" height="163" alt="image" src="https://github.com/user-attachments/assets/bb4c5c16-a0ae-4d4e-b1cc-c25894632644" />
 
 <h1>Deploying Active Directory and Joining a Client to the Domain</h1>
 After preparing the Azure infrastructure, this section focuses on deploying Active Directory Domain Services. The Windows Server virtual machine is promoted to a Domain Controller, creating the central directory service for the environment. After the domain is established, Active Directory is validated, an Organizational Unit is created for structured management, and the Windows client system is joined to the domain.<br />

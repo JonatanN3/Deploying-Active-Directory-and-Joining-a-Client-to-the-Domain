@@ -7,11 +7,12 @@ After preparing the Azure infrastructure, this section focuses on deploying Acti
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines)
-- Azure Virtual Network
-- Azure Resource Groups
 - Remote Desktop Protocol (RDP)
+- Active Directory Domain Services (AD DS)
+- Active Directory Users and Computers (ADUC)
 - DNS
-
+- Active Directory Domain Services (AD DS)
+  
 <h2>Operating Systems Used </h2>
 
 - Windows Server 2022 (Datacenter Azure Edition Hotpatch-x64 Gen2)

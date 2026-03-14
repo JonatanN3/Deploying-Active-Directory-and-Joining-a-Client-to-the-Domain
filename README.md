@@ -90,11 +90,11 @@ Steps:
 - Wait for the role installation process to finish.
 - Review the completion message in the wizard.
 - Confirm that the message indicated:
-- Configuration required
-- Installation succeeded on dc-1
+- **Configuration required**
+- **Installation succeeded on dc-1**
 - Read the notice explaining that further steps are needed to make the machine a domain controller.
 - Locate the link:
-- Promote this server to a domain controller
+- **Promote this server to a domain controller**
 - Prepare to continue post-deployment configuration.
 
 Explanation:
@@ -108,12 +108,12 @@ The installation of Active Directory Domain Services only prepares the server fo
 <p>
 Steps:
 
-- Return to the Server Manager dashboard after the AD DS role finished installing.
+- Return to the **Server Manager** dashboard after the AD DS role finished installing.
 - Observe the notification flag in the upper-right corner.
 - Click the notification flag.
-- Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on dc-1.
+- Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on **dc-1**.
 - Locate the option:
-- Promote this server to a domain controller
+- **Promote this server to a domain controlle**r
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
 Explanation:

@@ -53,7 +53,7 @@ Steps:
 - Review the description shown on the right side of the wizard.
 - Prepare to continue with the required supporting features.
 
-Explanation
+Explanation:
 This step selects the core server role required to build an Active Directory environment. Choosing Active Directory Domain Services allows the server to later be promoted into a Domain Controller.
 
 <h2>Confirm Installation Selections</h2>
@@ -77,10 +77,10 @@ Steps:
 - Check  **Restart the destination server automatically if required**.
 - Click  **Install**.
 
-Explanation
+Explanation:
 This represents the starting point of configuring the server. The Server Manager dashboard in Windows Server is used to install and manage server roles and features. One of the key roles installed through this tool is Active Directory, which allows the server to function as a domain controller.
 
-<h2>AD DS Installation Complete/h2>
+<h2>AD DS Installation Complete</h2>
   
 <img width="1536" height="1024" alt="LabA6" src="https://github.com/user-attachments/assets/013176d7-3c87-47a7-b32e-62fa0d78b196" />
 </p>
@@ -97,33 +97,27 @@ Steps:
 - Promote this server to a domain controller
 - Prepare to continue post-deployment configuration.
 
-Explanation
-These settings define how the Domain Controller will function in the environment. DNS is required because Active Directory depends heavily on name resolution, and the DSRM password is used for recovery and troubleshooting tasks if Active Directory needs to be restored.
+Explanation:
+The installation of Active Directory Domain Services only prepares the server for directory services. The server must still be promoted to a Domain Controller before it can manage users, computers,and authentication.
 
-
-<h2> Run the Prerequisites Check</h2>
+<h2>Promote This Server to a Domain Controller</h2>
 
 <p>
 <img width="1536" height="1024" alt="LabA9" src="https://github.com/user-attachments/assets/8b38698d-d6a9-4047-92af-379970b043e9" />
-
 </p>
 <p>
 Steps:
 
-  
-**Explanation**
-These settings define how the Domain Controller will function in the environment. DNS is required because Active Directory depends heavily on name resolution, and the DSRM password is used for recovery and troubleshooting tasks if Active Directory needs to be restored.
-Step:
-  
-Continued through the remaining configuration pages.
-Reached Prerequisites Check.
-Waited while Windows validated the configuration.
-Reviewed any warnings or informational notes.
-Confirmed that the checks passed successfully.
-Clicked Install to begin the Domain Controller promotion.
+- Return to the Server Manager dashboard after the AD DS role finished installing.
+- Observe the notification flag in the upper-right corner.
+- Click the notification flag.
+- Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on dc-1.
+- Locate the option:
+- Promote this server to a domain controller
+- Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
-Explanation
-This validation step is important because it confirms that the server is properly configured for promotion. In a production environment, this helps prevent configuration problems before Active Directory is installed.
+Explanation:
+This step begins the second stage of the deployment. The server now has the AD DS role installed, and this post-deployment task starts the process of creating the domain and promoting the server into a Domain Controller.
 
 <h2>Domain Controller Promotion Completed</h2>
 

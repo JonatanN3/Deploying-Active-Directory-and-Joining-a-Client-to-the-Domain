@@ -11,7 +11,6 @@ After preparing the Azure infrastructure, this section focuses on deploying Acti
 - Active Directory Domain Services (AD DS)
 - Active Directory Users and Computers (ADUC)
 - DNS
-- Active Directory Domain Services (AD DS)
   
 <h2>Operating Systems Used </h2>
 

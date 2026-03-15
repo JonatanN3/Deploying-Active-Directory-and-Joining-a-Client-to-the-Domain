@@ -113,12 +113,11 @@ Steps:
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
 **Explanation:**
-This step begins the post-deployment configuration following the AD DS role installation. It starts the process of domain creation and promotes the server to a Domain Controller, enabling it to manage users, computers, and directory services.
+Promoting the server to a Domain Controller configures the server to run Active Directory and manage the domain. This allows the server to control user accounts, computers, and security policy across the network.
 
 <h2>Configure a New Forest</h2>
 
-<p>
-<img width="1536" height="1024" alt="LabA21" src="https://github.com/user-attachments/assets/6f7cc0cb-cf7e-4a65-94f3-800f1bbc68c1" />
+<img width="1536" height="1024" alt="LabA15" src="https://github.com/user-attachments/assets/15e3dfd9-26ad-47cb-bcfa-97c61cbd6e44" />
 </p>
 <p>
 Steps:
@@ -133,92 +132,87 @@ Steps:
 - Click **Next** to continue.
 
 **Explanation:**
-This step confirms that Active Directory has been successfully deployed. At this point, the server is no longer just a Windows Server VM — it is now a working Domain Controller capable of managing the domain.
+During this step, a new Active Directory forest is created and the root is defined. The forest serves as the top-level container of the directory structure, while the root domain acts as the primary administrative control point for the network.
 
-<h2>Verify Server Manager After Restart</h2>
+<h2>Configure Domain Controller Options</h2>
 
-<p>
 <img width="1536" height="1024" alt="LabA24" src="https://github.com/user-attachments/assets/c5d67c88-96e7-4b02-ad9b-924d88d4f93f" />
 </p>
 <p>
 Steps:
   
-Logged back into dc-1 after the restart.
-Opened Server Manager.
-Reviewed the dashboard.
-Confirmed that AD DS and DNS were now installed server roles.
-Verified that the server was ready for Active Directory administration.
+- Proceed to the **Domain Controller Options** page.
+- Review the default **Forest functional level.**
+- Review the default **Domain functional level.**
+- Verify that the **DNS server** option was selected.
+- Verify that the **Global Catalog (GC)** option was enabled.
+- Left Read only **domain controller (RODC)** unselected.
+- Type a **Directory Services Restore Mode (DSRM)** password.
+- Confirm the DSRM password in the second field.
+- Select **Next** to continue.
 
-Explanation
-This step confirms that the reboot completed successfully and that the new Domain Controller roles are active. DNS and AD DS are both essential for managing a Windows domain environment.
+**Explanation**
+This step defines important domain controller settings. It enables DNS integration, confirms the server’s role in the domain, and sets the DSRM password used for recovery and maintenance of Active Directory services.
 
-<h2>Verify the Domain in Active Directory Users and Computers/h2>
+<h2>Prerequisites Check</h2>
 
-<p>
-<img width="1536" height="1024" alt="LabA26" src="https://github.com/user-attachments/assets/32aeaa00-4f23-4ac9-8cb9-262cef558387" />
-
+<img width="1536" height="1024" alt="LabA19" src="https://github.com/user-attachments/assets/e06971cc-688c-4e6d-a05b-4f7903eb35e4" />
 </p>
 <p>
 Steps:
 
-Opened Server Manager.
-Clicked Tools.
-Selected Active Directory Users and Computers.
-Waited for the management console to open.
-Expanded the left-side pane.
-Located the newly created domain.
-Expanded the domain to view the default containers, such as:
-Users
-Computers
-Domain Controllers
+Proceed through the configuration wizard after reviewing the deployment options.
+Reach the **Prerequisites Check** page.
+Wait while Windows validates the configuration.
+Review the results shown in the wizard.
+Varify the message stated:
+**All prerequisite checks passed successfully**
+Review the warning messages listed in the results pane.
+Confirm that no blocking errors prevented the promotion process.
+Prepare to click **Install.**
 
-Explanation
-This confirms that the domain was created successfully and that the Active Directory structure is now available for administration. This is one of the first places an IT administrator checks after promoting a Domain Controller.
+**Explanation:**
+At this stage, the server is evaluated for promotion to a Domain Controller. The wizard reviews configuration requirements, flags potential issues, and ensures everything is properly set before proceeding with the installation.
 
 
-<h2> Create the _EMPLOYEES Organizational Unit</h2>
+<h2>Domain Controller Promotion Complete</h2>
 
-<img width="1536" height="1024" alt="LabA28" src="https://github.com/user-attachments/assets/ea90c386-6d5f-4d06-b9cc-578965a8a223" />
+<img width="1536" height="1024" alt="LabA21" src="https://github.com/user-attachments/assets/2cfd0841-77d9-41c4-970e-0c1a57b19257" />
 </p>
 <p>
 Step:
   
-In Active Directory Users and Computers, right-clicked the domain name.
-Selected New.
-Clicked Organizational Unit.
-Entered the name:
- _EMPLOYEES
-Left Protect container from accidental deletion checked.
-Clicked OK.
+Click **Install** on the Prerequisites Check page.
+Wait while Active Directory is configured.
+Review the **Results** page after the promotion process completes
+Confirm the message stated:
+**This server was successfully configured as a domain controller**
+Observe the notification indicating that the computer was about to be signed out.
+Read the restart message explaining that the server would reboot because Active Directory Domain Services had been installed.
+Allow the restart process to continue.
 
-Explanation
-Organizational Units are used to organize users and computers inside Active Directory. This makes administration easier and allows policies to be applied to specific groups of objects. Creating OUs is a common best practice in IT environments.
+**Explanation**
+This step confirms that the server was successfully promoted to a Domain Controller. A restart is required to finalize the Active Directory configuration and bring the domain services online.
 
 
-<h2>Join Client-1 to the Domain</h2>
+<h2>Server Manager After Restart</h2>
 
-<p>
-<img width="1536" height="1024" alt="LabA31" src="https://github.com/user-attachments/assets/035951ca-779a-4108-8b15-5cf32d8f3e8d" />
+<img width="1536" height="1024" alt="LabA24" src="https://github.com/user-attachments/assets/f79503ae-dceb-4519-b9ed-3aca659d8be1" />
 </p>
 <p>
 Step:
   
-Logged into Client-1.
-Opened Settings.
-Navigated to System > About.
-Selected the option to rename the PC or join a domain/workgroup.
-Opened the Computer Name/Domain Changes window.
-Selected Domain.
-Entered the domain name:
- mydomain.com
-Clicked OK.
-Entered domain administrator credentials when prompted.
-Accepted the domain join.
-Confirmed the successful domain join message.
+- Wait for **dc-1** to restart after Domain Controller promotion.
+- Log back into the server.
+- Launch **Server Manager.**
+- Review the dashboard after the reboot completed.
+- Verify that the left navigation pane now displayed:
+- **AD DS**
+- **DNS**
+- Verifiy that the new roles appeared as active components of the server.
 
-Explanation
-Joining the client machine to the domain allows it to be managed through Active Directory. In a business environment, this is how workstations become part of the company network and can use centralized authentication and policy settings.
-
+**Explanation:**
+This step shows that the server restart completed successfully and that Active Directory Domain Services and DNS are now installed as active server roles. This also indicates that the domain controller configuration is in place.
 
 <h2>Verify Client-1 Appears in Active Directory</h2>
 

@@ -90,7 +90,7 @@ Steps:
 - Configuration required
 - Installation succeeded on dc-1
 - Read the notice explaining that further steps are needed to make the machine a domain controller.
-- Locate the link:
+- Locate the link:<br>
   **Promote this server to a domain controller**
 - Prepare to continue post-deployment configuration.
 
@@ -108,7 +108,7 @@ Steps:
 - Observe the notification flag in the upper-right corner.
 - Click the notification flag.
 - Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on dc-1.
-- Locate the option:
+- Locate the option:<br>
   **Promote this server to a domain controller**
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
@@ -126,7 +126,7 @@ Steps:
 - Review the available deployment options.
 - Select Add a new forest.
 - Click into the Root domain name field.
-- Type the domain name:
+- Type the domain name:<br>
   **mydomain.com**
 - Ensure that the new forest option was selected.
 - Click Next to continue.
@@ -146,7 +146,7 @@ Steps:
 - Review the default **Domain functional level.
 - Verify that the DNS server option was selected.
 - Verify that the Global Catalog (GC) option was enabled.
-- Left Read only domain controller (RODC) unselected.
+- Leave domain controller (RODC) unselected.
 - Type a Directory Services Restore Mode (DSRM) password.
 - Confirm the DSRM password in the second field.
 - Select Next to continue.
@@ -165,7 +165,7 @@ Steps:
 - Reach the Prerequisites Check page.
 - Wait while Windows validates the configuration.
 - Review the results shown in the wizard.
-- Varify the message stated:
+- Varify the message stated:<br>
   **All prerequisite checks passed successfully**
 - Review the warning messages listed in the results panel.
 - Confirm that no blocking errors prevented the promotion process.
@@ -184,7 +184,7 @@ Step:
 - Click Install on the Prerequisites Check page.
 - Wait while Active Directory is configured.
 - Review the Results page after the promotion process completes
-- Confirm the message showing:
+- Confirm the message showing:<br>
   **This server was successfully configured as a domain controller**
 - Observe the notification indicating that the computer is about to be signed out.
 - Read the restart message explaining that the server would reboot because Active Directory Domain Services had been installed.
@@ -203,9 +203,9 @@ Step:
 - Wait for dc-1 to restart after Domain Controller promotion.
 - Sign back into the server.
 - Launch Server Manager.
-- Review the dashboard after the reboot completed.
-- Verify that the left navigation pane now displayed:
-  **AD DS**
+- Review the dashboard after the reboot is complete.
+- Verify that the left navigation pane now displayed:<br>
+  **AD DS**<br>
   **DNS**
 - Verifiy that the new roles appeared as active components of the server.
 
@@ -243,7 +243,7 @@ Step:
 - Choose New.
 - Select Organizational Unit.
 - Click into the Name field.
-- Type the name:
+- Type the name:<br>
 **_EMPLOYEES**
 - Leave Protect container from accidental deletion checked.
 - Click OK to create the Organizational Unit.
@@ -263,9 +263,9 @@ Step:
 - Right-clicked the OU.
 - Choose New.
 - Select User.
-- Enter the user’s first name:
+- Enter the user’s first name:<br>
   **Jane**
-- Enter the user’s last name:
+- Enter the user’s last name:<br>
   **Doe**
 - Review the automatically generated full name.
 - Enter the user logon name.
@@ -287,7 +287,7 @@ Step:
 - Select the OU where the user was created.
 - Review the right pane.
 - Verify that the new account appeared in the directory listing.
-- Confirm that the account name displays as:
+- Confirm that the account name displays as:<br>
   **Jane Doe**
 - Confirm the object type shows User.
 
@@ -306,7 +306,7 @@ Step:
 - Click Add.
 - Open the Select Groups window.
 - Click into the object name field.
-- Enter:
+- Enter:<br>
 - **Domain Admins**
 - Review the location field to confirm the correct domain.
 - Prepare to validate and add the group membership.
@@ -328,7 +328,7 @@ Step:
 - Open the Computer Name/Domain Changes window.
 - Select the Domain option under membership.
 - Click into the domain field.
-- Type:
+- Type:<br>
   **mydomain.com**
 - Prepare to confirm the domain join request.
 

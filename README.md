@@ -179,7 +179,7 @@ This step checks the server’s readiness to become a Domain Controller. The wiz
 <img width="1536" height="1024" alt="LabA21" src="https://github.com/user-attachments/assets/2cfd0841-77d9-41c4-970e-0c1a57b19257" />
 </p>
 <p>
-Step:
+Steps:
   
 - Click Install on the Prerequisites Check page.
 - Wait while Active Directory is configured.
@@ -198,7 +198,7 @@ This step indicates that the Domain Controller promotion process finished succes
 <img width="1536" height="1024" alt="LabA24" src="https://github.com/user-attachments/assets/f79503ae-dceb-4519-b9ed-3aca659d8be1" />
 </p>
 <p>
-Step:
+Steps:
   
 - Wait for dc-1 to restart after Domain Controller promotion.
 - Sign back into the server.
@@ -217,7 +217,7 @@ This step shows that the server reboot finished and that both AD DS and DNS serv
 <img width="1536" height="1024" alt="LabA26" src="https://github.com/user-attachments/assets/0101d8c7-9809-43de-afc5-fef6fd41f268" />
 </p>
 <p>
-Step:
+Steps:
   
 Open Server Manager on dc-1.
 Click Tools in the top-right corner.
@@ -235,7 +235,7 @@ This step confirms that the Active Directory domain was successfully created and
 <img width="1536" height="1024" alt="LabA27" src="https://github.com/user-attachments/assets/a5209f7c-c6fe-409e-bc54-bc69e5dd69b7" />
 </p>
 <p>
-Step:
+Steps:
   
 - Open Active Directory Users and Computers.
 - Select the mydomain.com domain.
@@ -256,7 +256,7 @@ An Organizational Unit is created to organize and manage user accounts within th
 <img width="1536" height="1024" alt="LabA28" src="https://github.com/user-attachments/assets/66cb3f21-8771-475b-929f-9112ed62ff17" />
 </p>
 <p>
-Step:
+Steps:
   
 - Open Active Directory Users and Computers.
 - Select the target Organizational Unit for the user account.
@@ -280,7 +280,7 @@ A new user account is added to Active Directory so the individual can access net
 <img width="1536" height="1024" alt="LabA29" src="https://github.com/user-attachments/assets/52400f1d-fb7e-4edf-813f-099ed1f182fc" />
 </p>
 <p>
-Step:
+Steps:
   
 - Complete the New User wizard.
 - Return to Active Directory Users and Computers.
@@ -299,7 +299,7 @@ This step verifies that the user account was successfully created in Active Dire
 <img width="1536" height="1024" alt="LabA30" src="https://github.com/user-attachments/assets/50ef5bdd-dc27-4372-9baa-4e72dd98e869" />
 </p>
 <p>
-Step:
+Steps:
   
 - Open the properties of the user account in Active Directory Users and Computers.
 - Locate the Member Of tab.
@@ -319,7 +319,7 @@ This step assigns the user administrative privileges by adding the account to th
 <img width="1536" height="1024" alt="LabA31" src="https://github.com/user-attachments/assets/2238c07b-c736-48ec-8c54-d9289e9bbdc2" />
 </p>
 <p>
-Step:
+Steps:
   
 - Log into the Client-1 virtual machine.
 - Open Settings.
@@ -341,7 +341,7 @@ By joining the workstation to the domain, it becomes part of the Active Director
 <img width="1536" height="1024" alt="LabA34" src="https://github.com/user-attachments/assets/fa6a4779-fc83-4578-9a45-2b9de8071314" />
 </p>
 <p>
-Step:
+Steps:
   
 - Enter the domain name on Client-1.
 - Authenticate with domain credentials when prompted.
@@ -358,7 +358,7 @@ A system restart is necessary to finalize joining the domain. This allows the co
 <img width="1536" height="1024" alt="LabA35" src="https://github.com/user-attachments/assets/6f91ffe6-edc7-4d0a-94e3-4dc29140671b" />
 </p>
 <p>
-Step:
+Steps:
   
 - Return to dc-1 after the client restart.
 - Open Active Directory Users and Computers.

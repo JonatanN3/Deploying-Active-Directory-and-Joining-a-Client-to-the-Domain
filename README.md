@@ -41,7 +41,6 @@ This shows the starting point of the server configuration process. Server Manage
 <p>
 Steps:
   
-- Open Server Manager on dc-1.
 - Choose Add Roles and Features.
 - Proceed through the wizard until reaching the Server Roles page.
 - Locate Active Directory Domain Services in the list of available roles.

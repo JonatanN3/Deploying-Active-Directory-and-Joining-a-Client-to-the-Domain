@@ -58,11 +58,6 @@ This step selects the core server role required to build an Active Directory env
 <p>
 Steps:
   
-- Open Server Manager on dc-1.
-- Click Manage in the top-right corner.
-- Choose Add Roles and Features.
-- Proceed through the wizard until reaching Server Roles.
-- Select Active Directory Domain Services.
 - Accept the additional required features when prompted.
 - Continue through the wizard until reaching Confirm installation selections.
 - Review the selected roles and features, including:<br>
@@ -73,8 +68,7 @@ Steps:
 - Click  Install.
 
 **Explanation:**
-This represents the starting point of configuring the server. The Server Manager dashboard in Windows Server is used to install and manage server roles and features. One of the key roles installed through this tool is Active Directory, which allows the server to function as a domain controller.
-
+Installation of the required AD DS components is complete, representing a crucial step toward configuring the Windows Server as an operational Domain Controller.
 <h2>AD DS Installation Complete</h2>
   
 <img width="1536" height="1024" alt="LabA13" src="https://github.com/user-attachments/assets/f021bed9-0ed0-47f4-966d-d7b6ae1e6288" />

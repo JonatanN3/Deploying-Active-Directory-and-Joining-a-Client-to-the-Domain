@@ -316,12 +316,13 @@ Steps:
 - Open Start Menu and select system.
 - Click **Rename This PC (Advance)**
 - Under Computer Name tab Click on **Change**
-- Open the Computer/Name Domain window
-- Select the Domain option under member of.
+- Observe Computer/Name Domain window
+- Select the Domain option under Member of.
 - Click into the domain field.
 - Type:<br>
   **mydomain.com**
-- Prepare to confirm the domain join request.
+- Click ok
+
 
 
 **Explanation**

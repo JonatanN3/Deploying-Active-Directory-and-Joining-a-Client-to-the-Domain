@@ -337,10 +337,9 @@ Steps:
   
 - Enter the domain name on Client-1.
 - Authenticate with domain credentials when prompted.
-- Receive confirmation that the computer successfully joined the domain.
 - Accept the restart prompt.
 - Allow Client-1 to begin restarting.
-- Wait while the restart process is completed.
+- Wait till the restart process is completed.
 
 **Explanation**
 A system restart is necessary to finalize joining the domain. This allows the computer to apply the new domain settings and connect fully with the Domain Controller for authentication and policy management.

@@ -64,11 +64,12 @@ Steps:
   **Active Directory Domain Services**<br>
   **Group Policy Management**<br>
   **Remote Server Administration Tools**<br>
-- Check  Restart the destination server automatically if required.
-- Click  Install.
+- Check Restart the destination server automatically if required.
+- Click Install.
 
 **Explanation:**
 Installation of the required AD DS components is complete, representing a crucial step toward configuring the Windows Server as an operational Domain Controller.
+
 <h2>AD DS Installation Complete</h2>
   
 <img width="1536" height="1024" alt="LabA13" src="https://github.com/user-attachments/assets/f021bed9-0ed0-47f4-966d-d7b6ae1e6288" />
@@ -78,12 +79,11 @@ Steps:
   
 - Wait for the role installation process to finish.
 - Review the completion message in the wizard.
-- Confirm that the message indicated:
-- Configuration required
-- Installation succeeded on dc-1
+- Confirm that the message indicated:<br>
+- **Configuration required Installation succeeded on dc-1**
 - Read the notice explaining that further steps are needed to make the machine a domain controller.
 - Locate the link:<br>
-  **Promote this server to a domain controller**
+- **Promote this server to a domain controller**
 - Prepare to continue post-deployment configuration.
 
 **Explanation:**
@@ -101,7 +101,7 @@ Steps:
 - Click the notification flag.
 - Review the post-deployment message indicating that configuration is required for Active Directory Domain Services on dc-1.
 - Locate the option:<br>
-  **Promote this server to a domain controller**
+- **Promote this server to a domain controller**
 - Select the promotion link to begin the Active Directory Domain Services Configuration Wizard.
 
 **Explanation:**
@@ -135,11 +135,11 @@ Steps:
   
 - Proceed to the Domain Controller Options page.
 - Review the default Forest functional level.
-- Review the default **Domain functional level.
+- Review the default Domain functional level.
 - Verify that the DNS server option was selected.
-- Verify that the Global Catalog (GC) option was enabled.
-- Leave domain controller (RODC) unselected.
-- Type a Directory Services Restore Mode (DSRM) password.
+- Verify that the **Global Catalog (GC)** option was enabled.
+- Leave **Read Only Domain Controller (RODC)** unselected.
+- Type a **Directory Services Restore Mode (DSRM)** password.
 - Confirm the DSRM password in the second field.
 - Select Next to continue.
 
@@ -161,7 +161,7 @@ Steps:
   **All prerequisite checks passed successfully**
 - Review the warning messages listed in the results panel.
 - Confirm that no blocking errors prevented the promotion process.
-- Prepare to click Install.
+- click **Install.**
 
 **Explanation:**
 This step checks the server’s readiness to become a Domain Controller. The wizard validates required settings, confirms prerequisites are met, and alerts you to any warnings or errors before the promotion process starts.
@@ -173,13 +173,13 @@ This step checks the server’s readiness to become a Domain Controller. The wiz
 <p>
 Steps:
   
-- Click Install on the Prerequisites Check page.
 - Wait while Active Directory is configured.
 - Review the Results page after the promotion process completes
 - Confirm the message showing:<br>
   **This server was successfully configured as a domain controller**
 - Observe the notification indicating that the computer is about to be signed out.
-- Read the restart message explaining that the server would reboot because Active Directory Domain Services had been installed.
+- Read the restart message explaining that<br>
+  **The server is going to be restarted because Active Directory Domain Services has been installed or removed.**
 - Allow the restart process to continue.
 
 **Explanation**
@@ -195,7 +195,7 @@ Steps:
 - Wait for dc-1 to restart after Domain Controller promotion.
 - Sign back into the server.
 - Launch Server Manager.
-- Review the dashboard after the reboot is complete.
+- Review the dashboard after the restart is complete.
 - Verify that the left navigation pane now displayed:<br>
   **AD DS**<br>
   **DNS**
@@ -210,14 +210,12 @@ This step shows that the server reboot finished and that both AD DS and DNS serv
 </p>
 <p>
 Steps:
-  
-Open Server Manager on dc-1.
-Click Tools in the top-right corner.
-Select Active Directory Users and Computers.
-Locate the domain tree in the left panel.
-Verify that mydomain.com appears under Active Directory Users and Computers.
-Select mydomain.com without expanding it.
-Confirm that the domain is listed and accessible in the console.
+
+- Click **Start Menu**
+- Click **Windows Administrative Tools**
+- Select **Active Directory Users and Computers.**
+- Verify that **mydomain.com** appears under Active Directory Users and Computers.
+- Confirm that the domain is listed and accessible in the console.
 
 **Explanation**
 This step confirms that the Active Directory domain was successfully created and is now visible within the Active Directory Users and Computers management console. Seeing the domain listed indicates that the Domain Controller is properly managing the new directory environment and that administrators can begin managing users, computers, and organizational units within the domain.
@@ -230,14 +228,14 @@ This step confirms that the Active Directory domain was successfully created and
 Steps:
   
 - Open Active Directory Users and Computers.
-- Select the mydomain.com domain.
+- Select the **mydomain.com.**
 - Right-click the domain name.
 - Choose New.
 - Select Organizational Unit.
 - Click into the Name field.
 - Type the name:<br>
 **_EMPLOYEES**
-- Leave Protect container from accidental deletion checked.
+- Leave **Protect container from accidental deletion** checked.
 - Click OK to create the Organizational Unit.
 
 **Explanation**
@@ -261,7 +259,7 @@ Steps:
   **Doe**
 - Review the automatically generated full name.
 - Enter the user logon name.
-- Review the pre-Windows 2000 logon name.
+- Review the **pre-Windows 2000** logon name.
 - Click  Next to continue user creation.
 
 **Explanation**
@@ -281,7 +279,7 @@ Steps:
 - Verify that the new account appeared in the directory listing.
 - Confirm that the account name displays as:<br>
   **Jane Doe**
-- Confirm the object type shows User.
+- Confirm the object type showed User.
 
 **Explanation**
 This step verifies that the user account was successfully created in Active Directory. Seeing the account in the directory confirms that the object now exists and can be managed like any other domain user.
@@ -292,16 +290,17 @@ This step verifies that the user account was successfully created in Active Dire
 </p>
 <p>
 Steps:
-  
-- Open the properties of the user account in Active Directory Users and Computers.
-- Locate the Member Of tab.
+
+- Right-click the user created.
+- Select properties in drop down list.
+- Navigate to the Member of tab.
 - Click Add.
-- Open the Select Groups window.
+- Observe **Select Groups window**.
 - Click into the object name field.
 - Enter:<br>
 - **Domain Admins**
-- Review the location field to confirm the correct domain.
-- Prepare to validate and add the group membership.
+- Press **Check Names**
+- Click Ok.
 
 **Explanation**
 This step assigns the user administrative privileges by adding the account to the Domain Admins group. Group membership is a common way to manage permissions and administrative roles in Active Directory.
@@ -314,11 +313,11 @@ This step assigns the user administrative privileges by adding the account to th
 Steps:
   
 - Log into the Client-1 virtual machine.
-- Open Settings.
-- Navigate to System > About.
-- Select the option to change the computer’s domain or workgroup settings.
-- Open the Computer Name/Domain Changes window.
-- Select the Domain option under membership.
+- Open Start Menu and select system.
+- Click **Rename This PC (Advance)**
+- Under Computer Name tab Click on **Change**
+- Open the Computer/Name Domain window
+- Select the Domain option under member of.
 - Click into the domain field.
 - Type:<br>
   **mydomain.com**

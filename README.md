@@ -161,7 +161,7 @@ Steps:
   **All prerequisite checks passed successfully**
 - Review the warning messages listed in the results panel.
 - Confirm that no blocking errors prevented the promotion process.
-- click **Install.**
+- click Install.
 
 **Explanation:**
 This step checks the server’s readiness to become a Domain Controller. The wizard validates required settings, confirms prerequisites are met, and alerts you to any warnings or errors before the promotion process starts.
@@ -211,10 +211,10 @@ This step shows that the server reboot finished and that both AD DS and DNS serv
 <p>
 Steps:
 
-- Click **Start Menu**
-- Click **Windows Administrative Tools**
-- Select **Active Directory Users and Computers.**
-- Verify that **mydomain.com** appears under Active Directory Users and Computers.
+- Click Start Menu
+- Click Windows Administrative Tools
+- Select Active Directory Users and Computers.
+- Verify that mydomain.com appears under Active Directory Users and Computers.
 - Confirm that the domain is listed and accessible in the console.
 
 **Explanation**
@@ -228,14 +228,14 @@ This step confirms that the Active Directory domain was successfully created and
 Steps:
   
 - Open Active Directory Users and Computers.
-- Select the **mydomain.com.**
+- Select the mydomain.com.
 - Right-click the domain name.
 - Choose New.
 - Select Organizational Unit.
 - Click into the Name field.
 - Type the name:<br>
 **_EMPLOYEES**
-- Leave **Protect container from accidental deletion** checked.
+- Leave Protect container from accidental deletion checked.
 - Click OK to create the Organizational Unit.
 
 **Explanation**
@@ -259,7 +259,7 @@ Steps:
   **Doe**
 - Review the automatically generated full name.
 - Enter the user logon name.
-- Review the **pre-Windows 2000** logon name.
+- Review the pre-Windows 2000 logon name.
 - Click  Next to continue user creation.
 
 **Explanation**
@@ -295,11 +295,11 @@ Steps:
 - Select properties in drop down list.
 - Navigate to the Member of tab.
 - Click Add.
-- Observe **Select Groups window**.
+- Observe Select Groups window.
 - Click into the object name field.
 - Enter:<br>
 - **Domain Admins**
-- Press **Check Names**
+- Press Check Names
 - Click Ok.
 
 **Explanation**
@@ -314,8 +314,8 @@ Steps:
   
 - Log into the Client-1 virtual machine.
 - Open Start Menu and select system.
-- Click **Rename This PC (Advance)**
-- Under Computer Name tab Click on **Change**
+- Click Rename This PC (Advance)
+- Under Computer Name tab Click on Change
 - Observe Computer/Name Domain window
 - Select the Domain option under Member of.
 - Click into the domain field.
